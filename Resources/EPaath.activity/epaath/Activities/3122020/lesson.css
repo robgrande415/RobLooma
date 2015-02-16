@@ -1,0 +1,123 @@
+#content {
+    background: url(background.jpg) no-repeat center;
+}
+
+#barGraphSection {
+    margin: 2px auto;
+    width: 1198px;
+    height: 700px;
+}
+
+#questionText {
+	width: 100%;
+	font: 40px Geneva, sans-serif;
+}
+
+#imageSection {
+    position: absolute;
+    left: 110px;
+    width: 1012px;
+    height: 200px;
+    background-color: #CAFFCE;
+}
+
+.dragObjects {
+    float: left;
+    width: 90px;
+    height: 90px;
+    cursor: move;
+    margin-left: 10px;
+}
+
+#questionSection {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 110px;
+    width: 1000px;
+    height: 55px;
+    font-weight: bold;
+    background-color: #CAFFCE;
+    font: 60px Geneva, sans-serif;
+}
+
+.questions {
+    padding: 10px;
+    margin-left: 50px;
+}
+
+#numbersSection {
+    position: absolute;
+    top: 1px;
+    left: 18px;
+    width: 90px;
+    font: 60px/90px Geneva, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #A3EE2C ;
+}
+
+.numbers {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #A3EE2C ;
+    cursor: pointer;
+    color: black;
+}
+
+.numbers:hover {
+    color: red;
+    background-color: #FF9900;
+}
+
+#barGraph {
+    margin-left: 110px;
+    width: 1080px;
+    height: 650px;
+}
+
+.dropObjects {
+    float: left;
+    width: 90px;
+    height: 90px;
+    border: 1px solid #7E477B ;
+    background-color: #E1EFFD;
+}
+
+.drophover {
+    background-color: #FF0000;
+}
+
+#objectsSection {
+    margin-left: 132px;
+    width: 1000px;
+    height: 90px;
+}
+
+.objects {
+    margin-top: 2px;
+    margin-left: 64px;
+    margin-right: 32px;
+    float: left;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.objects:hover {
+    background-color: #FF9900;
+}
+
+#gameOver {
+    margin-top: 150px;
+    text-align: center;
+    font: 30px/35px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: red;
+}
+
+#gameOverInfo {
+    margin-top: 35px;
+    text-align: center;
+    font: 35px/40px Helvetica,Verdana, Geneva, Arial, sans-serif;
+}

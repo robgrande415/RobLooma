@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="uploadFile.php" method="post" enctype="multipart/form-data">
+    <h1>Select image to upload:</h1>
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <h2>Name in Looma: </h2> <input type="text" autofocus="autofocus" name="guiName" id="guiName">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+
+</body>
+</html>

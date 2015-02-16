@@ -1,0 +1,112 @@
+@CHARSET "UTF-8";
+#instructions {
+    font:bold 40px Arial,Helvetica,sans-serif;
+    position:relative;
+    top:30px;
+}
+#help {
+    display: none;
+    position: absolute;
+    right: 60px;
+    top: 75px;;
+    width: 297px;
+    height: 697px;
+    z-index: 40;
+}
+
+#content {
+    margin: 2px auto;
+    margin-top: 74px;
+    width: 1198;
+    height: 750px;
+    position: relative;
+    overflow-y: hidden;
+}
+
+#section {
+    display: block;
+}
+
+#shapesSection {
+    margin: 75px auto;
+    background-image: url(dragHere.png);
+    background-repeat: no-repeat;
+    width: 658px;
+    height: 221px;
+}
+
+#dropSection {
+    text-align: center;
+    margin: 75px auto;
+    width: 900px;
+    height: 130px;
+}
+
+.dragObjects {
+    position: relative;
+    float: left;
+    cursor: move;
+    width: 68px;
+    height: 62px;
+    margin-left: 2em;
+    padding-left: 2px;
+}
+
+.dragObjectsText {
+    position: relative;
+    float: left;
+    cursor: move;
+    width: 75px;
+    height: 45px;
+    margin-left: 0.7em;
+    padding-left: 2px;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.dropObjects {
+    float: left;
+    width: 252px;
+    height: 118px;
+    margin: 0.5em;
+    background-image: url(dropHere.png);
+}
+
+.dropText {
+    margin-top: .11em;
+    margin-left: 0.9em;
+    text-align: center;
+    float: left;
+    width: 235px;
+    height: 30px;
+    font: 24px/30px "Courier New", Courier, monospace;
+    font-weight: bold;
+    color: red;
+}
+
+.drophover {
+    background-color: #FF9900;
+}
+
+#shapesSection1 {
+    margin: 120px auto;
+    width: 1150px;
+    height: 45px;
+    padding: 5px 20px 5px 20px;
+    border: 4px solid #38F7F8;
+}
+
+#dropSection1 {
+    margin: 2px auto;
+    width: 900px;
+    height: 130px;
+}
+
+.dropObjects1 {
+    float: left;
+    width: 252px;
+    height: 118px;
+    margin: 0.5em;
+    background-image: url(dropHere1.png);
+}

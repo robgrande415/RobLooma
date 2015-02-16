@@ -1,0 +1,80 @@
+
+#content {
+    background: url(background.jpg) no-repeat center;
+}
+
+.topText{
+    font: 24px bold Arial,Verdana,Geneva,Helvetica;
+    position:absolute;
+    left:350px;
+    top:170px;
+}
+
+#dragWords{
+    width: 700px;
+    height: 150px;
+    position: absolute;
+    left: 250px;
+    top: 5px;
+}
+.dragObject{
+    cursor: move;
+    float: left;
+    font: 30px bold Arial,Verdana,Geneva,Helvetica;
+    height:30px;
+    margin:0.3em;
+    padding:5px 15px;
+    position:relative;
+}
+
+
+#dropArea{
+    width: 300px;
+    height: 470px;
+    position: absolute;
+    left: 15px;
+    top: 180px;
+}
+
+.dropBox{
+    height:61px;
+    margin:12px 0 18px;
+    position:relative;
+    width:297px;
+}
+
+.drophover {
+    background-color: #FF9900;
+}
+
+#animalImages{
+    width: 700px;
+    position: absolute;
+    left: 400px;
+    top: 240px;
+}
+.animalImage{
+    float: left;
+    margin-bottom:-3px;
+}
+#img3{
+    clear:left;
+}
+
+#answerCheck{
+    left:350px;
+    position:absolute;
+    top:560px;
+}
+
+#gameOver{
+    background:none repeat scroll 0 0 #DDDDDD;
+    border:1px solid #333333;
+    color:#AA0000;
+    margin:0 auto;
+    padding:40px;
+    position:relative;
+    top:400px;
+    width:400px;
+    font: 20px bold Arial,Verdana,Geneva,Helvetica;
+}

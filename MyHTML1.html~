@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title> My First HTML </title>
+</head>
+
+<body>
+<h1> Header </h1>
+<p title="My Paragraph" style="color:blue"> paragraph </p>
+<p><strong> Look at <del> this </del> text. </strong></p>
+<a href = https://www.google.com> Click here </a>
+<br>
+<img src="textbooks.png" alt="Class" title="Books">
+
+
+</html>

@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+#content {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 74px;
+    width: 1198px;
+    height: 750px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#help {
+    z-index: 240;
+}
+
+#instructions {
+    font: 30px Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 30px;
+}
+
+#section1, #section2 {
+    margin: 80px auto;
+}
+
+#section3 {
+    float: left;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+
+#shapesSection1 {
+    margin: 10px auto;
+    padding: 5px;
+    border: 4px solid #38F7F8;
+    width: 365px;
+    height: 175px;
+}
+
+#shapesSection2 {
+    margin: 10px auto;
+    padding: 5px;
+    border: 4px solid #38F7F8;
+    width: 550px;
+    height: 175px;
+}
+
+#shapesSection3 {
+    position: relative;
+    left: -20px;
+    margin: 10px auto;
+    padding: 5px;
+    border: 4px solid #38F7F8;
+    width: 800px;
+    height: 225px;
+}
+
+#dropSection1 {
+    margin: 70px auto;
+    margin-bottom: 2px;
+    width: 550px;
+    height:150px;
+}
+
+#dropSection2 {
+    margin: 70px auto;
+    margin-bottom: 2px;
+    width: 825px;
+    height:150px;
+}
+
+#dropSection3 {
+    margin: 40px auto;
+    margin-bottom: 2px;
+    width: 700px;
+    height:150px;
+}
+
+.dropObjects3 {
+    float: left;
+    width: 200px;
+    height: 132px;
+    margin: 0.5em;
+    border: 2px solid #B2F675;
+}
+
+#shapes3Img {
+    width: 800px;
+    height: 225px;
+    background: url(main.png) no-repeat;
+}
+
+.dropObjects {
+    float: left;
+    width: 252px;
+    height: 132px;
+    margin: 0.5em;
+    background-image: url(dropHere.png);
+}
+
+.dropText {
+    margin-top: .22em;
+    margin-left: 3em;
+    text-align: center;
+    float: left;
+    width: 150px;
+    height: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+.dropText3 {
+    margin-top: .22em;
+    margin-left: 4em;
+    text-align: center;
+    float: left;
+    width: 80px;
+    height: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+.dragObjects {
+    float: left;
+    cursor: move;
+    width: 70px;
+    height: 62px;
+    margin: 0.4em;
+    padding: 2px;
+}
+
+.drophover {
+    background-color: #FF9900;
+}

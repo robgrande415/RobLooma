@@ -1,0 +1,6 @@
+<frameset rows="29%,*" cols="*" border="0">
+  <frame name="topTools" src="topTools.php" noresize="noresize" scrolling="no"/>
+ <!-- <frame name="externalWeb" src="http://www.google.com" noresize="noresize" scrolling="auto"/>
+-->
+  <frame name="bottomTools" src="bottomTools.php" noresize="noresize" scrolling="no"/>
+</frameset>

@@ -1,0 +1,55 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "999olive";
+$dbname = "Testing";
+$maxCol = 5;
+
+//checks if we're in a subdirectory or root
+if(isset($_GET["childID"])) {
+	$parentID = $_GET["childID"];
+}
+else {
+$parentID = 0; 
+}
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+
+
+// make buttons names
+$sql = 'SELECT * FROM content where parentID=' . $parentID .'';
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+	echo "<form name='fullsizeimage' action='http://localhost/PracticeHTML/PracticeSQL.php' target='_blank' method='get'>";
+	echo "<table name='table_wbdisplay' border='0'>";	
+    	// output data of each row
+	$col = 0;
+    	while($row = $result->fetch_assoc()) {
+        	echo "<td><button type='submit'  name='childID' value='" . $row["childID"] . "'>" . $row["guiName"] . "</button></td>";
+	//creates new row if last is full
+	$col++;
+	if ($col >= $maxCol)
+		{
+		echo "<tr>";
+		$col=0;
+		}
+		
+    	}
+	
+	echo "</table></form>";
+} else {
+    echo "0 results";
+}
+
+
+//create add button
+
+?> 
+

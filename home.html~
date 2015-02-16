@@ -1,0 +1,4 @@
+<frameset rows="29%,*" cols="*" border="0">
+  <frame name="logo" src="logo.html" noresize="noresize" scrolling="no"/>
+  <frame name="pages" src="class.html" noresize="noresize" scrolling="auto"/>
+</frameset>

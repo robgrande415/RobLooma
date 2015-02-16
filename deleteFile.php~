@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Looma 2 Practice</title>
+<link rel="stylesheet" type="text/css" href="loomaStyle.css">
+
+<?php
+//SQL details
+$servername = "localhost";
+$username = "root";
+$password = "999olive";
+$dbname = "Testing";
+$maxCol = 5;
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+session_start();
+if(isset($_POST['childID']))
+{
+	deleteFile();
+//TODO: change header to call with childID
+	header("Location: navigator.php");
+    	exit;
+} 
+
+function deleteFile($otherID = -1) {
+
+	//if there are no children delete self, otherwise, delete children first
+	if ($otherID == -1) {
+		$otherID = $_POST['childID'];
+	}
+	$sql = "select childID from content where parentID=".$otherID."";
+	$result = $GLOBALS['conn']->query($sql);
+	if ($result->num_rows > 0) {
+		while($row = $result->fetch_assoc()) {
+			deleteFolder($row["childID"]);
+		}
+	}
+	
+	//base case no children
+	$sql = "delete from content where childID=".$otherID."";
+	echo $sql;
+	echo "<br>";
+	$GLOBALS['conn']->query($sql);
+	
+}
+?>
+
+</head>
+
+<body>
+
+<header>
+<?php
+include 'topTools.php';
+?>
+</header>
+
+<nav>
+<?php
+include 'logo.html';
+?>
+</nav>
+
+<div class="cent-button">
+<h1> Select Folder to Delete: </h1>
+<?php
+if(isset($_GET["childID"])) {
+session_start();
+	$parentID = $_GET["childID"];
+	$_SESSION["currID"] = $_GET["childID"];
+	
+}
+else {
+	//start session global variables
+	session_start();
+	$parentID = 0;
+	$_SESSION["currID"] = $parentID;
+}
+
+// make buttons names
+$sql = 'SELECT * FROM content where parentID=' . $parentID .' order by guiName';
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+	echo "<form name='fullsizeimage' action='http://localhost/PracticeHTML/deleteFolder.php' target='_self' method='post'>";
+	echo "<table name='table_wbdisplay' border='0' align='center'>";
+    	// output data of each row
+	$col = 0;
+    	while($row = $result->fetch_assoc()) {
+        	echo "<td height='100'><button type='submit' name='childID' height = '100' value='" . $row["childID"] . "'>" . $row["guiName"] . "</button></td>";
+	//creates new row if last is full
+	$col++;
+	if ($col >= $maxCol)
+		{
+		echo "<tr>";
+		$col=0;
+		}
+		
+    	}
+	//add cancel button
+	echo "<td height='100'><button type='submit' name='childID' height = '100' value=-1> Cancel </button></td>";
+
+	//TODO: popup confirmation window
+	echo "</table></form>";
+} else {
+    echo "<h1>This Folder is Empty</h1>";
+}
+
+$conn->close();
+
+?> 
+
+</form>
+</div>
+
+</body>
+</html>

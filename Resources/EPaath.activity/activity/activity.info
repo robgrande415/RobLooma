@@ -1,0 +1,9 @@
+[Activity]
+name = EPaath
+license = GPLv2 + CC-BY-SA
+exec = sugar-activity EPaath.Epaath
+service_name = org.olenepal.EPaath2
+activity_version = 248
+icon = epaath
+show_launcher = yes
+

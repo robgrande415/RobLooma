@@ -1,0 +1,117 @@
+@CHARSET "UTF-8";
+
+#section {
+    margin: 0px auto;
+    letter-spacing: 1px;
+	text-align: left;
+}
+
+#topText {
+    width: 500px;
+    margin-top: 50px;
+    height: 25px;
+    font: 24px/27px Arial, Helvetica, sans-serif;
+    color: #30C;
+}
+
+#rightBar {
+    float: right;
+    margin-top: 100px;
+    width: 450px;
+}
+
+#question {
+    margin-left: 15px;
+    padding: 5px;
+    height: 30px;
+    font: 30px/32px Arial, Helvetica, sans-serif;
+    color: #0000FF;
+}
+
+#answer {
+    margin-left: 40px;
+    padding: 5px;
+    height: 30px;
+    font: 27px/32px Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+#optionSection {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 450px;
+    height: 250px;
+}
+
+.options {
+    float: left;
+    width: 44px;
+    height: 46px;
+    cursor: pointer;
+}
+
+.check {
+    margin-top: 10px;
+    float: left;
+    width: 36px;
+    height: 32px;
+}
+
+.optionText {
+    float: right;
+    margin-left: 0.7em;
+    width: 350px;
+    height: 46px;
+    font: 25px/50px Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+#imgStory {
+    position: relative;
+    float: left;
+    margin-top: 70px;
+    margin-left: 10px;
+    width: 679px;
+    height: 570px;
+    background: url(main.png);
+}
+
+#gameOver {
+    margin-top: 45px;
+    text-align: center;
+    font: 30px/35px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: red;
+}
+
+#gameOverInfo {
+    margin-top: 35px;
+    text-align: center;
+    font: 20px/25px Helvetica, Geneva, Arial, Verdana, sans-serif;
+    font-weight: bold;
+    color: #000000;
+}
+
+.specialText {
+    font: 20px/25px Helvetica, Geneva, Arial, Verdana, sans-serif;
+    font-weight: bold;
+    color: #FF9900;
+    border-bottom: 2px dotted #CCC;
+}
+
+.objectBox {
+    position: absolute;
+}
+
+.objectBoxHover {
+    border: 2px solid blue;
+}
+
+.objectLabel {
+    display: none;
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    font: 25px Verdana, Arial;
+    color: black;
+}

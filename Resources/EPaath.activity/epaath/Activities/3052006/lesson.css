@@ -1,0 +1,97 @@
+@CHARSET "UTF-8";
+
+#content {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 74px;
+    width: 1198px;
+    height: 750px;
+    background: url(background.jpg) no-repeat center;
+
+}
+
+#instructionTxt {
+    position: absolute;
+    top: 412px;
+    left: 150px;
+    z-index: 3;
+    color: white;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-shadow:3px 3px black;
+}
+
+#scoreBox {
+    position: absolute;
+    bottom: 3.2em;
+    right: 6.5em;
+    width: 3.4em;
+    height: 1.8em;
+    background: #201801;
+    color: #FFF;
+    font: 40px/70px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    -moz-border-radius: 20px;
+}
+
+#fishArea {
+    margin: 0;
+    width: 100%;
+    height: 55%;
+}
+
+.fish {
+    cursor: move;
+    position: absolute;
+    width: 258px;
+    height: 175px;
+    text-align: center;
+    font: 30px/180px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    z-index: 5;
+}
+
+.fishLeft {
+    background: url(fishLeft.png) no-repeat center;
+}
+
+.fishRight {
+    background: url(fishRight.png) no-repeat center;
+}
+
+.fishPos {
+    position: absolute;
+    width: 258px;
+    height: 175px;
+}
+
+#dropFish {
+    width: 23em;
+    height: 11.5em;
+    position: absolute;
+    bottom: 7em;
+    left: 30em;
+}
+
+.drophover {
+    background-color: #FF9900;
+}
+
+.backOpaque {
+    background-color: #A4A4A4;
+    opacity: 0.2;
+}
+
+#help {
+    z-index: 40;
+}
+
+#gameOver {
+    position: absolute;
+    bottom: 22em;
+    left: 25em;
+    width: 427px;
+    height: 133px;
+    background: url(gameover.png) no-repeat center;
+}

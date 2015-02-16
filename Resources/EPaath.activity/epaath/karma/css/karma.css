@@ -1,0 +1,49 @@
+/* import nepal's Themeroller theme */
+@import url(./ui.base.css);
+@import url(./theme/jquery-ui-1.7.2.custom.css);
+@import url(./ui.dialog.css);
+@import url(./ui.resizable.css);
+@import url(./ui.feedback.css);
+
+/*  special hack for the current karma-loader notification  */
+@media screen {
+	#karma-loader{
+		position:absolute;
+		top:0;
+		left:0;
+		padding: 2px 2px 1px 5px;
+		font-size: 12px;
+		background: #0066cc;
+		color: #ffffff;
+		
+	}
+	#karma-loader.status{		
+		left:110px;
+	}
+}
+
+body{
+    padding: 0px;
+    margin: 0 auto 0 auto;
+    width: 1200px;
+    height: 900px; 
+    overflow: hidden;
+    position: relative;
+    background-color: purple;
+}
+
+#kMain {
+    width: 1200px;
+    height: 760px;
+    float: left;
+    clear: both;
+    background-color: white;
+}
+
+/* for first-time users */
+#kMain #itWorks{
+    text-align: center;
+    font-size: 4em;
+}
+
+

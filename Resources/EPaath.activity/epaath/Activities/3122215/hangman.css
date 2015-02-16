@@ -1,0 +1,78 @@
+@CHARSET "UTF-8";
+
+#def {
+    margin: 5px;
+    width: 50em;
+    text-align: left;
+}
+
+.imgHangMan {
+    margin: 2em auto;
+    width: 860px;
+    height: 258px;
+}
+
+#questionSection {
+    color: red;
+    width: 300px;
+}
+
+#answers {
+    color: #82C682;
+    width: 150px;
+    height: 50px;
+}
+
+#keyboard {
+    padding: 5px;
+    margin: 25px 2px 10px 20px;
+    text-align: center;
+    width: 590px;
+    height: 160px;
+    font: 18px Verdana, Geneva, Helvetica, Arial, sans-serif;
+}
+
+#keys1 {
+    margin-left: 18px;
+    clear:both;
+}
+
+#keys2 {
+    margin-left: 55px;
+    clear:both;
+}
+
+#keys3 {
+    margin-left: 85px;
+    clear:both;
+}
+
+.alphaKeys {
+    margin: 0.5em;
+    padding:0.1em;
+    border: 1px solid #A3D1BA;
+    background-color: #DFEFF8;
+    width: 32px;
+    height: 32px;
+    float:left;
+    text-align:center;
+    font: 18px/30px Verdana, Geneva, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+.alphaKeysSelected {
+    background-color: #FFFFFF;
+}
+
+#missedText {
+    font: 25px/35px Verdana, Geneva, Helvetica, Arial, sans-serif;
+    color: blue;
+    padding: 5px;
+    text-align:center;
+    width: 590px;
+    height: 80px;
+}
+
+.text {
+    font: 24px Geneva, Helvetica, Verdana, Arial, sans-serif;
+}

@@ -1,0 +1,160 @@
+@CHARSET "UTF-8";
+#instructions {
+    font:bold 40px Arial,Helvetica,sans-serif;
+    position:relative;
+    top:30px;
+}
+#linkCheck {
+    margin: 1em 3em 0 0;
+    width: 101px;
+    height: 30px;
+    background-image: url(check.png);
+    cursor: pointer;
+}
+
+#content {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 74px;
+    width: 1198px;
+    height: 750px;
+    overflow-y: hidden;
+
+}
+
+#section {
+    width: 900px;
+    height: 400px;
+    margin: 170px auto;
+}
+
+#left-side {
+    padding-top: 80px;
+    margin: 0em auto;
+    float: left;
+    width: 360px;
+    height: 285px;
+    border: 2px solid black;
+    text-align: center;
+    background: url(bgLeft.png);
+    -moz-border-radius : 20px;
+    -webkit-border-radius : 20px;
+    border-radius : 20px;
+}
+
+#right-side {
+    float: right;
+    width: 400px;
+    height: 365px;
+    border: 2px solid black;
+    -moz-border-radius : 20px;
+    -webkit-border-radius : 20px;
+    border-radius : 20px;
+    background-color: #7FFFC9;
+}
+
+#rightBack {
+    background-repeat: no-repeat;
+    width: 383px;
+    height: 365px;
+    text-align: center;
+    right: 100px;
+}
+
+#bgCalculation {
+    margin-top: -9.7em;
+    padding-top: 5px;
+    width: 360px;
+    height: 90px;
+    text-align: center;
+}
+
+#textQues1 {
+    float: right;
+    width: 400px;
+    height: 30px;
+    letter-spacing: 5px;
+    font: 20px/25px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding-right: 20px;
+    text-align: right;
+    margin-right: -3em;
+}
+
+#textQues2 {
+    float: right;
+    width: 450px;
+    height: 30px;
+    letter-spacing: 5px;
+    text-align: right;
+    font: 20px/25px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding-right: 15px;
+    margin-right: -3em;
+}
+
+#textQues3 {
+    margin: 5px 10px 0 0;
+    float: right;
+    text-align: right;
+    width: 300px;
+    height: 30px;
+    padding-right: 16px;
+    font: 20px/25px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.blankBoxes {
+    padding-left: 15px;
+    width: 35px;
+    height: 40px;
+    border-bottom : 2px solid black;
+    font: 20px/25px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.quesText {
+    font: 20px/25px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+input.textBox {
+    size: 3;
+    font: 15px/20px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    height: 20px;
+    width: 30px;
+    text-align: center;
+}
+
+.focus {
+    background-color: #FFEEAA;
+}
+
+.correct {
+    background-color: #C0F9F3;
+}
+
+.incorrect {
+    background-color: #FFFF00;
+}
+
+.backOpaque {
+    background-color: #A4A4A4;
+    opacity: 0.2;
+}
+
+#help {
+    z-index: 40;
+}
+
+#gameOver {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    width: 432px;
+    height: 68px;
+    background: url('gameOver.png');
+}
+#answerCheck{
+    left:966px;
+    position:absolute;
+    top:500px;
+}

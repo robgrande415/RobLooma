@@ -1,0 +1,91 @@
+#currentTitle {
+    width: 150px;
+    height: 80px;
+    font: 25px/30px "Courier New", Courier, monospace;
+    font-weight: bold;
+    color: red;
+}
+
+#gameTitle {
+    padding: 5px;
+    height: 20px;
+    color: blue;
+    font: 24px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+#questionSection {
+    width: 480px;
+    text-align: left;
+}
+
+#answerSection {
+    width: 480px;
+    color: black;
+    text-align: left;
+}
+
+.answerBox {
+    width: 40px;
+    height: 40px;
+    color: #82C682;
+    padding: 0px 5px;
+    margin: 0.1em;
+    border-bottom: 2px solid #000;
+}
+
+#infoSection {
+    position: absolute;
+    left: 42%;
+    top: 52%;
+    text-align: center;
+    padding: 0px auto;
+    width: 300px;
+    height: 50px;
+    color: #FF9900;
+    border-left: 2px dotted #CCC;
+    font: 18px Geneva, Helvetica, Verdana, Arial, sans-serif;
+}
+
+#missedText {
+    margin-top: 50px;
+}
+
+#hangManSection {
+    position: absolute;
+    top: 55%;
+    left: 72%;
+    width: 180px;
+    height: 184px;
+}
+
+.imgHang {
+    width: 180px;
+    height: 184px;
+}
+
+#gameOverSection {
+    display: none;
+    margin: 2px auto;
+    padding: 5px;
+    width: 680px;
+    height: 450px;
+    color: blue;
+    font: 20px/22px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.oneOrMoreUtensils {
+    margin-top: 5em;
+    width: 1002px;
+    height: 576px;
+}
+
+#gameOver {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: blue;
+    text-align: center;
+    font: bold 45px/65px Arial Black, Times New Roman;
+}
